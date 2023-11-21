@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    /*Main Blue Color: rgb(13,92,164)*/
+    @font-face {
+    font-family: interBold;
+    src: url(fonts/Inter-Bold.ttf);
+    }
+    body{
+      margin: 0px;
+      padding-left: 90px;
+      padding-right: 90px;
+
+    }
+    .nav-content {
+
+    }
+    .nav-list {
+      list-style: none;
+      padding-left: 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .button-div {
+      
+      /*background-color: rgb(13,92,164);
+      text-align: center;
+      padding: 7px 15px;
+      border-radius: 2px;
+      border: 1.5px solid black;
+      font-size: 20px;
+      */
+      border: 1.5px solid rgb(13,92,164);
+      padding: 7px 15px;
+    }
+    .nav-link {
+      text-decoration: none;
+      color: white;
+      color: rgb(13,92,164);
+      font-size: 20px;
+      font-family:interBold;
+    }
+  </style>
+</head>
+<body>
+  <header class="nav-content">
+    
+    <ul class="nav-list">
+      <a href="index.html" class="nav-link"><div class="button-div">
+        <li class="home-button">Home</li>
+      </div></a>
+
+     <a href="gallery.html" class="nav-link"><div class="button-div"> 
+        <li class="gallery-button">Gallery</li>
+      </div></a>
+      
+      <img src="images/logo.png" height="70px" class="logo-image">
+      
+      <a href="about.html" class="nav-link"><div class="button-div">
+        <li class="about-button">About</li>
+      </div></a>
+
+      <a href="contact.html" class="nav-link"><div class="button-div">
+        <li class="contact-button">Contact</li>
+      </div></a>
+    </ul>
+  </header>
+  <hr>
+</body>
+</html>
