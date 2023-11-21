@@ -12,8 +12,7 @@
     }
     body{
       margin: 0px;
-      padding-left: 90px;
-      padding-right: 90px;
+
       font-family: interBold;
     }
     .nav-content {
@@ -25,6 +24,8 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
+      margin-left: 24px;
+      margin-right: 24px;
     }
     .button-div {
       
@@ -68,7 +69,10 @@
     }
 
     .intro-image{
-      
+      width:100%;
+      max-height: 800px;
+      object-position: center;
+      object-fit: cover;
     }
     .image-info {
       position: absolute;
@@ -78,6 +82,7 @@
       color:black;
       font-size: 100px;
       font-family: interBold;
+      text-shadow: 2px 2px 0px rgb(13,92,164);
       
     }
     .top-wrapper .btn {
@@ -94,9 +99,18 @@
     }
     
 
-
+    .middle-wrapper {
+      margin-top: 100px;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
     .body-title {
       color: rgb(13,92,164);
+    }
+
+    .body-description {
+      line-height: 25px;
+      font-size: 20px;
     }
   </style>
 </head>
@@ -107,6 +121,7 @@
 
 
       <img src="images/logo.png" height="70px" class="logo-image">
+      
 
       <a href="index.html" class="nav-link"><div class="button-div">
         <li class="home-button">Home</li>
@@ -124,14 +139,14 @@
   </header>
   
   <div class="top-wrapper">
-    <img src="images/image1.jpg" class="intro-image" height="550px" width="830px" >
+    <img src="images/image1.jpg" class="intro-image">
     <h1 class="image-info">Dallas Area</h1>
-    <button class="btn">My Work</button>
+    <button class="btn">Our Work</button>
   </div>
 
   <div class="middle-wrapper">
     <h1 class="body-title">SMART TECH EXPERTS LLC.</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam numquam repellendus tenetur earum nobis dolorem debitis nesciunt iure. Illo magni id voluptas odit, necessitatibus ipsa vero eveniet aspernatur repudiandae magnam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet sint error maxime dicta recusandae repudiandae assumenda iste saepe eos. Quibusdam ex perferendis dolorem impedit possimus, animi praesentium incidunt amet ullam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis maiores reiciendis, animi commodi quas laudantium quidem? Perspiciatis dolore, repellendus culpa aspernatur fuga vel odit enim qui labore! Magni, aperiam ad!</p>
+    <p class="body-description">Smart Tech Experts LLC, located in the Dallas area, is your go-to company for home and apartment renovations and repairs. With a focus on quality craftsmanship and attention to detail, we transform living spaces to meet your vision. Our experienced team is committed to delivering exceptional results, making Smart Tech Experts LLC the trusted choice for all your renovation needs in the Dallas community.</p>
   </div>
 
 </body>
