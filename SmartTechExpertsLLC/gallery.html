@@ -4,8 +4,217 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery</title>
+  <style>
+    /*Main Blue Color: rgb(13,92,164)*/
+    @font-face {
+    font-family: interBold;
+    src: url(fonts/Inter-Bold.ttf);
+    }
+    body{
+      margin: 0px;
+      font-family: interBold;
+      
+    }
+    .nav-flex{
+      display: flex;
+      justify-content: space-between;
+      margin:24px 24px;
+    }
+
+    .nav-content {
+      margin-bottom: 0px;
+
+      width: 350px
+    }
+    .nav-list {
+      list-style: none;
+      padding-left: 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      
+
+    }
+    .nav-hr{
+      margin-bottom: 0px;
+    }
+    .button-div {
+      
+      /*background-color: rgb(13,92,164);
+      text-align: center;
+      padding: 7px 15px;
+      border-radius: 2px;
+      border: 1.5px solid black;
+      font-size: 20px;
+      */
+      border: 1.5px solid black;
+      color: rgb(13,92,164);
+      padding: 7px 15px;
+      transition: background-color .10s, color .10s, border-color .10s;
+    }
+
+    .button-div:hover {
+      background-color: rgb(13,92,164);
+      color:white;
+      border-color: black;
+    }
+
+    .button-div:active {
+      background-color: rgb(61, 160, 253);
+      color:rgb(240, 240, 240);
+      border-color: rgb(65, 64, 64);
+    }
+
+    .nav-link {
+      text-decoration: none;
+      font-size: 18px;
+      font-family:interBold;
+    }
+
+    .project-title {
+      font-size: 46px;
+      font-family: 'Chivo'
+    }
+    .title-hr {
+      background-color: rgb(13,92,164);
+      width: 965px;
+      height: 2px;
+      margin: 24px 24px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      margin: 24px 24px;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 5px;
+      max-width: 965px;
+      column-gap: 40px;
+      row-gap: 60px;
+      margin-bottom: 120px;
+      font-family: Chivo;
+    }
+
+
+
+    .gallery-grid img {
+      width: 100%;
+      min-height: 220px;
+      object-fit: cover;
+      object-position: center;
+      box-shadow: 1px 1px 3px black;
+      transition: transform .15s;
+      border-radius: 2px;
+    }
+    .gallery-grid img:hover{
+      transform: scale(1.02);
+      box-shadow: 1px 1px 3px rgb(13,92,164);
+      
+    }
+    .lb-text {
+      color: black;
+      font-size: 40px;
+      text-decoration: underline;
+      text-decoration-color:rgb(13,92,164);
+    }
+
+    .db-text {
+      font-size: 40px;
+      color: rgb(13,92,164);
+      text-decoration: underline;
+      text-decoration-color: black;
+    }
+
+
+
+    footer {
+      background-color: rgb(13,92,164);
+      color: white;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo&family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
+  
+  <div class="nav-flex">
+    <img src="images/logo.png" height="70px" class="logo-image">
+    <header class="nav-content">
+      <ul class="nav-list">
 
+      
+        <a href="index.html" class="nav-link"><div class="button-div">
+          <li class="home-button">Home</li>
+        </div></a>
+
+        <a href="gallery.html" class="nav-link"><div class="button-div"> 
+            <li class="gallery-button">Gallery</li>
+          </div></a>
+    
+        <a href="contact.html" class="nav-link"><div class="button-div">
+          <li class="contact-button">Contact</li>
+        </div></a>
+      </ul>
+      
+    </header>
+</div>
+<hr class="nav-hr">
+<center>
+<h1 class="project-title">BATHROOMS</h1>
+<hr class="title-hr">
+<div class="gallery-grid">
+  <div class="grid-item db-text">
+    Before
+    <img src="images/BA-Images/before1.png">
+  </div>
+  <div class="grid-item db-text">
+    After
+    <img src="images/BA-Images/after1.png">
+  </div>
+  <div class="grid-item lb-text">
+    Before
+    <img src="images/BA-Images/before2.jpg">
+  </div>
+  <div class="grid-item lb-text">
+    After
+    <img src="images/BA-Images/after2.jpg">
+  </div>  
+</div>
+<h1 class="project-title">GARAGES</h1>
+<hr class="title-hr">
+<div class="gallery-grid">
+  <div class="grid-item db-text">
+    Before
+    <img src="images/BA-Images/before1.png">
+  </div>
+  <div class="grid-item db-text">
+    After
+    <img src="images/BA-Images/after1.png">
+  </div>
+  <div class="grid-item lb-text">
+    Before
+    <img src="images/BA-Images/before1.png">
+  </div>
+  <div class="grid-item lb-text">
+    After
+    <img src="images/BA-Images/after1.png">
+  </div>  
+</div>
+</center>
+
+
+
+
+
+
+
+
+  <footer>
+    <br><br>
+    <center>
+      SMART TECH EXPERTS LLC. &copy; 2023 All Rights Reserved.
+    </center>
+    <br><br>
+  </footer>
 </body>
 </html>

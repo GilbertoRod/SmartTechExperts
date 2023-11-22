@@ -3,9 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery</title>
+  <title>Contact</title>
+  <style>
+    /*Main Blue Color: rgb(13,92,164)*/
+    @font-face {
+    font-family: interBold;
+    src: url(fonts/Inter-Bold.ttf);
+    }
+    body{
+      margin: 0px;
+      font-family: interBold;
+      
+    }
+    .nav-flex{
+      display: flex;
+      justify-content: space-between;
+
+      margin:24px 24px;
+    }
+
+    .nav-content {
+      margin-bottom: 0px;
+      width: 350px
+
+    }
+    .nav-list {
+      list-style: none;
+      padding-left: 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      
+
+    }
+    .nav-hr{
+      margin-bottom: 0px;
+    }
+    .button-div {
+      
+      /*background-color: rgb(13,92,164);
+      text-align: center;
+      padding: 7px 15px;
+      border-radius: 2px;
+      border: 1.5px solid black;
+      font-size: 20px;
+      */
+      border: 1.5px solid black;
+      color: rgb(13,92,164);
+      padding: 7px 15px;
+      transition: background-color .10s, color .10s, border-color .10s;
+    }
+
+    .button-div:hover {
+      background-color: rgb(13,92,164);
+      color:white;
+      border-color: black;
+    }
+
+    .button-div:active {
+      background-color: rgb(61, 160, 253);
+      color:rgb(240, 240, 240);
+      border-color: rgb(65, 64, 64);
+    }
+
+    .nav-link {
+      text-decoration: none;
+      font-size: 18px;
+      font-family:interBold;
+    }
+
+
+
+
+
+
+    
+
+    footer {
+      background-color: rgb(13,92,164);
+      color: white;
+    }
+  </style>
 </head>
 <body>
   
+  <div class="nav-flex">
+    <img src="images/logo.png" height="70px" class="logo-image">
+    <header class="nav-content">
+      <ul class="nav-list">
+
+      
+        <a href="index.html" class="nav-link"><div class="button-div">
+          <li class="home-button">Home</li>
+        </div></a>
+
+        <a href="gallery.html" class="nav-link"><div class="button-div"> 
+            <li class="gallery-button">Gallery</li>
+          </div></a>
+    
+        <a href="contact.html" class="nav-link"><div class="button-div">
+          <li class="contact-button">Contact</li>
+        </div></a>
+      </ul>
+      
+    </header>
+</div>
+
+<center>
+<form class="fill-form">
+  <p>
+    <label>Name: </label>
+    <input type="text" name="name" placeholder="Your Name">
+  </p>
+  <p>
+    <label>Email: </label>
+    <input type="email" name="user_email" placeholder="">
+  </p>
+  <p class=full>
+    <label>Message:</label>
+    <textarea name ="message" rows = 10 placeholder="Your Message Here"></textarea>
+  </p>
+  <p class=full>
+    <button input type="submit" value="Submit"> Submit</button>
+  </p>
+</form>
+</center>
+
+
+
+
+<hr class="nav-hr">
+ 
+
+
+
+
+
+
+
+
+
+  <footer>
+    <br><br>
+    <center>
+      SMART TECH EXPERTS LLC. &copy; 2023 All Rights Reserved.
+    </center>
+    <br><br>
+  </footer>
 </body>
 </html>
