@@ -16,6 +16,9 @@
       padding-top: 60px;
       background-color: rgb(245, 245, 245);
     }
+    .hamburger{
+      display: none;
+    }
     .navigation{
       position: fixed;
       width: 100%;
@@ -133,10 +136,17 @@
     }
     .email-info{
       margin-bottom: -20px;
+      display: inline-block;
+      color: rgb(13,92,164);
     }
     .phone-info{
       margin-bottom: 20px;
+      display: inline-block;
+      color: rgb(13,92,164);
     }
+
+
+
 
 
     #name, #email, textarea {
@@ -149,6 +159,7 @@
       margin-bottom: 16px;
       resize: vertical;
       font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
 
@@ -176,15 +187,122 @@
       color: white;
       padding: 15px;
     }
+
+
+
+
+
+    @media only screen and (max-width: 640px) {
+
+      .nav-content{
+        display: none;
+      }
+      .hamburger{
+        display: inline-block;
+        
+      }
+      .ham-icon{
+        cursor: pointer;
+      }
+      .ham-js-icon{
+        display: none;
+      }
+      .x-icon{
+        cursor: pointer;
+        display: none;
+      }
+      .x-icon-display {
+        display: inline-block;
+        position: fixed;
+        top:35px;
+        right:28px;
+
+      }
+      .nav-flex{
+        align-items:center
+      }
+
+
+      .ham-anchor {
+        text-decoration-color:black;
+        font-family: interBold;
+        color: rgb(13,92,164);
+      }
+
+
+      .sidebar{
+        height:35%;
+        width: 100%;
+        background-color: rgb(243, 242, 242);
+        box-shadow: 0px 0px 2px rgb(0, 0, 0);
+        position:fixed;
+        right: 0px;
+        top: 110px;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+
+      }
+
+
+
+
+
+      .sidebar-list{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        color: rgb(79, 235, 144);
+        text-decoration: underline;
+        text-decoration-color: white;
+        line-height: 70px;
+        font-size: 32px;
+        font-family: arial;
+      }
+    }
+
+
+
+    @media only screen and (max-width: 390px){
+      .logo-image{
+        height: 60px;
+      }
+      .sidebar{
+        top: 101px;
+      }
+    }
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chivo&family=Lobster&display=swap" rel="stylesheet">
+  
 </head>
 <body>
   <div class="navigation">
     <div class="nav-flex">
-      <img src="images/logo.png" height="70px" class="logo-image">
+      <a href="index.html"><div>
+        <img src="images/logo.png" height="70px" class="logo-image">
+      </div></a>
+      <div class="hamburger">
+        <div class="ham-icon js-ham">
+        <img src="images/hamburger.png" onclick="hamburger();" width="40px">
+        </div>
+        
+
+        <div class="js-sidebar">
+          <div class="x-icon">
+            <img src="images/x.png" width="35px" onclick="hamburger();" >
+          </div>
+          <ul class="sidebar-list">
+            <li class="js-resume"></li>
+            <li class="js-gallery"></li>
+            <li class="js-contact"></li>
+          </ul>
+        </div>
+
+      </div>
+
       <header class="nav-content">
         <ul class="nav-list">
 
@@ -201,6 +319,7 @@
             <li class="contact-button">Contact</li>
           </div></a>
         </ul>
+        
       </header>
     </div>
     <hr class="nav-hr">
@@ -213,12 +332,13 @@
     <div class="info-container">
       <center>
         <h3>Smart Tech Experts LLC.</h3>
-        <img><p class="email-info">email@email.com</p>
-        <img><p class="phone-info">123-456-7890</p>
+        <a href="mailto:pablotzintzun@sbcglobal.net"><p class="email-info" type="email">pablotzintzun@sbcglobal.net</p></a>
+        <br>
+        <a href="tel:469-728-4201"><p class="phone-info">469-728-4201</p></a>
       </center>
     </div>
     <div class="form-container">
-      <form action="action_page.php">
+      <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
 
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Your name..">
@@ -229,7 +349,7 @@
         <label for="message">Message:</label>
         <textarea id="message" name="message" placeholder="Write something.." style="height:250px"></textarea>
 
-        <input type="submit" value="Submit" class="submit-button">
+        <input type="submit" class="submit-button">
 
       </form>
     </div>
@@ -238,9 +358,10 @@
   <footer>
     <br><br>
     <center>
-      SMART TECH EXPERTS LLC. &copy; 2023 All Rights Reserved.
+      SMART TECH EXPERTS LLC. <br>&copy; 2023 All Rights Reserved.
     </center>
     <br><br>
   </footer>
+  <script src="scripts/dropdown.js"></script>
 </body>
 </html>
