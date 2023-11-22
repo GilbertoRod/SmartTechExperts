@@ -13,12 +13,20 @@
     body{
       margin: 0px;
       font-family: interBold;
-      
+      padding-top: 150px;
+      background-color: rgb(245, 245, 245);
+    }
+    .navigation{
+      position: fixed;
+      width: 100%;
+      background-color: white;
+      top: 0;
+      z-index: 2;
     }
     .nav-flex{
       display: flex;
       justify-content: space-between;
-      margin:24px 24px;
+      margin:18px 24px;
     }
 
     .nav-content {
@@ -75,11 +83,16 @@
       font-size: 46px;
       font-family: 'Chivo'
     }
+
+
+
+
     .title-hr {
       background-color: rgb(13,92,164);
-      width: 965px;
+      width: 100%;
       height: 2px;
-      margin: 24px 24px;
+
+ 
     }
 
     .gallery-grid {
@@ -104,10 +117,12 @@
       box-shadow: 1px 1px 3px black;
       transition: transform .15s;
       border-radius: 2px;
+      margin-top: 12px;
     }
     .gallery-grid img:hover{
       transform: scale(1.02);
-      box-shadow: 1px 1px 3px rgb(13,92,164);
+      box-shadow: 1px 1px 5px black;
+      z-index: 1;
       
     }
     .lb-text {
@@ -129,6 +144,7 @@
     footer {
       background-color: rgb(13,92,164);
       color: white;
+      padding: 15px;
     }
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -136,32 +152,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Chivo&family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
-  
-  <div class="nav-flex">
-    <img src="images/logo.png" height="70px" class="logo-image">
-    <header class="nav-content">
-      <ul class="nav-list">
+  <div class="navigation">
+    <div class="nav-flex">
+      <img src="images/logo.png" height="70px" class="logo-image">
+      <header class="nav-content">
+        <ul class="nav-list">
 
-      
-        <a href="index.html" class="nav-link"><div class="button-div">
-          <li class="home-button">Home</li>
-        </div></a>
-
-        <a href="gallery.html" class="nav-link"><div class="button-div"> 
-            <li class="gallery-button">Gallery</li>
+        
+          <a href="index.html" class="nav-link"><div class="button-div">
+            <li class="home-button">Home</li>
           </div></a>
-    
-        <a href="contact.html" class="nav-link"><div class="button-div">
-          <li class="contact-button">Contact</li>
-        </div></a>
-      </ul>
+
+          <a href="gallery.html" class="nav-link"><div class="button-div"> 
+              <li class="gallery-button">Gallery</li>
+            </div></a>
       
-    </header>
-</div>
-<hr class="nav-hr">
+          <a href="contact.html" class="nav-link"><div class="button-div">
+            <li class="contact-button">Contact</li>
+          </div></a>
+        </ul>
+        
+      </header>
+    </div>
+    <hr class="nav-hr">
+  </div>
+
 <center>
 <h1 class="project-title">BATHROOMS</h1>
-<hr class="title-hr">
+
+<div class="hr-div">
+  <hr class="title-hr">
+</div>
+
 <div class="gallery-grid">
   <div class="grid-item db-text">
     Before
@@ -178,8 +200,11 @@
   <div class="grid-item lb-text">
     After
     <img src="images/BA-Images/after2.jpg">
-  </div>  
+  </div>
+
+<section id="garages-section"></section> 
 </div>
+
 <h1 class="project-title">GARAGES</h1>
 <hr class="title-hr">
 <div class="gallery-grid">
@@ -200,6 +225,7 @@
     <img src="images/BA-Images/after1.png">
   </div>  
 </div>
+</section>
 </center>
 
 

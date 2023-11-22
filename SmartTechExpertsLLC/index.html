@@ -13,13 +13,23 @@
     body{
       margin: 0px;
       font-family: interBold;
+      padding-top: 100px;
+      background-color: rgb(248, 248, 248);
       
     }
+    .navigation{
+      position: fixed;
+      width: 100%;
+      background-color: white;
+      top: 0;
+      z-index: 2;
+    }
+
     .nav-flex{
       display: flex;
       justify-content: space-between;
-
-      margin:24px 24px;
+      margin:18px 24px;
+ 
     }
 
     .nav-content {
@@ -37,6 +47,7 @@
     }
     .nav-hr{
       margin-bottom: 0px;
+      border-bottom: 0px;
     }
     .button-div {
       
@@ -74,10 +85,11 @@
     .top-wrapper {
       position: relative;
       text-align: center;
-      margin-left: -90px;
-      margin-right: -90px;
+      width: 100%;
       
     }
+
+
 
     .intro-image{
       width:100%;
@@ -99,7 +111,7 @@
     }
     .top-wrapper .btn {
       position: absolute;
-      top: 60%;
+      bottom: 20%;
       left:50%;
       transform: translate(-50%, -50%);
       padding: 20px 40px;
@@ -108,7 +120,11 @@
       border: none;
       cursor: pointer;
       background-color: white;
-      
+      transition: background-color .15s;
+    }
+    .btn:hover{
+      background-color: rgb(13,92,164);
+      color: white;
     }
     
 
@@ -141,6 +157,18 @@
     .bottom-wrapper .special-grid img{
       max-height: 290px;
       max-width: 400px;
+      transition: transform .15s;
+      cursor: pointer;
+    }
+
+
+
+    .bottom-wrapper .special-grid img:hover{
+      transform: scale(1.02);
+      box-shadow: 1px 1px 5px black;
+      z-index: 1;
+      
+      
     }
     .bottom-wrapper {
       margin-bottom: 60px;
@@ -151,6 +179,7 @@
     footer {
       background-color: rgb(13,92,164);
       color: white;
+      padding: 15px;
     }
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -158,34 +187,37 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
-  
-  <div class="nav-flex">
-    <img src="images/logo.png" height="70px" class="logo-image">
-    <header class="nav-content">
-      <ul class="nav-list">
+  <div class="navigation">
+    <div class="nav-flex">
+      <img src="images/logo.png" height="70px" class="logo-image">
+      <header class="nav-content">
+        <ul class="nav-list">
 
-      
-        <a href="index.html" class="nav-link"><div class="button-div">
-          <li class="home-button">Home</li>
-        </div></a>
-
-        <a href="gallery.html" class="nav-link"><div class="button-div"> 
-            <li class="gallery-button">Gallery</li>
+        
+          <a href="index.html" class="nav-link"><div class="button-div">
+            <li class="home-button">Home</li>
           </div></a>
-    
-        <a href="contact.html" class="nav-link"><div class="button-div">
-          <li class="contact-button">Contact</li>
-        </div></a>
-      </ul>
+
+          <a href="gallery.html" class="nav-link"><div class="button-div"> 
+              <li class="gallery-button">Gallery</li>
+            </div></a>
       
-    </header>
-</div>
-<hr class="nav-hr">
+          <a href="contact.html" class="nav-link"><div class="button-div">
+            <li class="contact-button">Contact</li>
+          </div></a>
+        </ul>
+        
+      </header>
+    </div>
+    <hr class="nav-hr">
+  </div>
   
   <div class="top-wrapper">
+
     <img src="images/image1.jpg" class="intro-image">
-    <h1 class="image-info">DFW AREA</h1>
-    <button class="btn">Our Work</button>
+
+    <h1 class="image-info">DFW BASED</h1>
+    <a href="gallery.html"><button class="btn">Our Work</button></a>
   </div>
 
   <div class="middle-wrapper">
@@ -201,13 +233,13 @@
     <hr>
     <center>
       <div class="special-grid">
-        <div class="grid-item"><img src="images/garage-door.jpg" width="100%"></div>
+        <div class="grid-item"><img src="images/garage-door.jpg" id="garage" width="100%"></div>
         
-        <div  class="grid-item"><img src="images/lights.jpg" width="100%"></div>
+        <div  class="grid-item"><img src="images/lights.jpg" width="100%" id="bathroom"></div>
         
-        <div  class="grid-item"><img src="images/lights.jpg" width="100%"></div>
+        <div  class="grid-item"><img src="images/lights.jpg" width="100%" id="bathroom"></div>
         
-        <div  class="grid-item"><img src="images/garage-door.jpg" width="100%"></div>
+        <div  class="grid-item"><img src="images/garage-door.jpg" width="100%" id="garage"></div>
       </div>
     </center>
   </div>
@@ -219,5 +251,15 @@
     </center>
     <br><br>
   </footer>
+  <script>
+    document.getElementById('garage').addEventListener('click',function(){
+      window.location.href='gallery.html#garages-section';
+    });
+    document.getElementById('bathroom').addEventListener('click',function(){
+      window.location.href='gallery.html';
+    });
+
+    
+  </script>
 </body>
 </html>

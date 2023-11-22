@@ -13,13 +13,20 @@
     body{
       margin: 0px;
       font-family: interBold;
-      
+      padding-top: 60px;
+      background-color: rgb(245, 245, 245);
+    }
+    .navigation{
+      position: fixed;
+      width: 100%;
+      background-color: white;
+      top: 0;
+      z-index: 2;
     }
     .nav-flex{
       display: flex;
       justify-content: space-between;
-
-      margin:24px 24px;
+      margin:18px 24px;
     }
 
     .nav-content {
@@ -39,15 +46,8 @@
     .nav-hr{
       margin-bottom: 0px;
     }
+    
     .button-div {
-      
-      /*background-color: rgb(13,92,164);
-      text-align: center;
-      padding: 7px 15px;
-      border-radius: 2px;
-      border: 1.5px solid black;
-      font-size: 20px;
-      */
       border: 1.5px solid black;
       color: rgb(13,92,164);
       padding: 7px 15px;
@@ -75,74 +75,166 @@
 
 
 
+    .title-hr {
+      background-color: rgb(13,92,164);
+      width: 100%;
+      height: 2px;
+      margin-bottom: 48px;
+
+ 
+    }
+    .contact-title {
+      font-size: 46px;
+      font-family: 'Chivo';
+      margin-bottom:0px;
+      
+    }
+
+    .container {
+      padding:24px 24px;
+      max-width: 900px;
+      padding-top: 0px;
+
+    }
+
+    .form-container {
+
+      background-color: #e9e8e8;
+      padding: 20px;
+      text-align: left;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+     
+
+    }
+    .info-container {
+      border: 1px solid black;
+      background-color: rgb(50, 50, 50);
+      color: white;
+    }
 
 
-    
+
+
+
+
+
+
+
+
+    h1{
+      margin-top: 120px;
+      color: Black;
+
+    }
+
+    h3 {
+      margin-bottom: 0px;
+    }
+    .email-info{
+      margin-bottom: -20px;
+    }
+    .phone-info{
+      margin-bottom: 20px;
+    }
+
+
+    #name, #email, textarea {
+      width: 100%; 
+      padding: 12px; 
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box; 
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+      font-size: 18px;
+    }
+
+
+    .submit-button {
+      background-color: rgb(13,92,164);
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .submit-button:hover {
+      background-color: rgb(63, 122, 176);
+    }
+
+
+
+
+
 
     footer {
       background-color: rgb(13,92,164);
       color: white;
+      padding: 15px;
     }
   </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo&family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
-  
-  <div class="nav-flex">
-    <img src="images/logo.png" height="70px" class="logo-image">
-    <header class="nav-content">
-      <ul class="nav-list">
+  <div class="navigation">
+    <div class="nav-flex">
+      <img src="images/logo.png" height="70px" class="logo-image">
+      <header class="nav-content">
+        <ul class="nav-list">
 
-      
-        <a href="index.html" class="nav-link"><div class="button-div">
-          <li class="home-button">Home</li>
-        </div></a>
-
-        <a href="gallery.html" class="nav-link"><div class="button-div"> 
-            <li class="gallery-button">Gallery</li>
+        
+          <a href="index.html" class="nav-link"><div class="button-div">
+            <li class="home-button">Home</li>
           </div></a>
-    
-        <a href="contact.html" class="nav-link"><div class="button-div">
-          <li class="contact-button">Contact</li>
-        </div></a>
-      </ul>
+
+          <a href="gallery.html" class="nav-link"><div class="button-div"> 
+              <li class="gallery-button">Gallery</li>
+            </div></a>
       
-    </header>
-</div>
+          <a href="contact.html" class="nav-link"><div class="button-div">
+            <li class="contact-button">Contact</li>
+          </div></a>
+        </ul>
+      </header>
+    </div>
+    <hr class="nav-hr">
+  </div>
+  <center>
+  <h1 class="contact-title">Contact Me</h1>
 
-<center>
-<form class="fill-form">
-  <p>
-    <label>Name: </label>
-    <input type="text" name="name" placeholder="Your Name">
-  </p>
-  <p>
-    <label>Email: </label>
-    <input type="email" name="user_email" placeholder="">
-  </p>
-  <p class=full>
-    <label>Message:</label>
-    <textarea name ="message" rows = 10 placeholder="Your Message Here"></textarea>
-  </p>
-  <p class=full>
-    <button input type="submit" value="Submit"> Submit</button>
-  </p>
-</form>
-</center>
+  <div class="container">
+    <hr class="title-hr">
+    <div class="info-container">
+      <center>
+        <h3>Smart Tech Experts LLC.</h3>
+        <img><p class="email-info">email@email.com</p>
+        <img><p class="phone-info">123-456-7890</p>
+      </center>
+    </div>
+    <div class="form-container">
+      <form action="action_page.php">
 
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name..">
 
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email...">
 
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Write something.." style="height:250px"></textarea>
 
-<hr class="nav-hr">
- 
+        <input type="submit" value="Submit" class="submit-button">
 
-
-
-
-
-
-
-
-
+      </form>
+    </div>
+  </div>
+  </center>
   <footer>
     <br><br>
     <center>
