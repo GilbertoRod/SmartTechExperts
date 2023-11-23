@@ -1,9 +1,17 @@
 document.getElementById('garage').addEventListener('click',function(){
   window.location.href='gallery.html#garages-section';
 });
+document.getElementById('garage-re').addEventListener('click',function(){
+  window.location.href='gallery.html#garages-section';
+});
+
 document.getElementById('bathroom').addEventListener('click',function(){
   window.location.href='gallery.html';
 });
+document.getElementById('bathroom-re').addEventListener('click',function(){
+  window.location.href='gallery.html';
+});
+
 function hamburger(){
   const sidebar=document.querySelector(".js-sidebar");
   const icon=document.querySelector(".x-icon")
