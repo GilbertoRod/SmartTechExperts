@@ -19,6 +19,22 @@
     .hamburger{
       display: none;
     }
+    .temp-hr {
+      display: none;
+    }
+    .temp-hr-1 {
+      display: none;
+    }
+    .menu-sep {
+      border-color: rgba(95, 95, 95, 0.449);
+      border-style: solid;
+      border-width: .5px;
+    }
+    .menu-sep-1 {
+      border-color: rgba(95, 95, 95, 0.449);
+      border-style: solid;
+      border-width: .5px;
+    }
     .navigation{
       position: fixed;
       width: 100%;
@@ -224,16 +240,20 @@
 
 
       .ham-anchor {
-        text-decoration-color:black;
+        text-decoration:none;
         font-family: interBold;
         color: rgb(13,92,164);
+      }
+      .ham-anchor:hover {
+
+        color: rgb(86, 136, 184);
       }
 
 
       .sidebar{
         height:35%;
         width: 100%;
-        background-color: rgb(243, 242, 242);
+        background-color: rgb(242, 241, 241);
         box-shadow: 0px 0px 2px rgb(0, 0, 0);
         position:fixed;
         right: 0px;
@@ -244,21 +264,23 @@
         align-items:center;
 
       }
+      
 
-
-
-
-
+  
+  
+  
       .sidebar-list{
         list-style-type: none;
         margin: 0px;
         padding: 0px;
         color: rgb(79, 235, 144);
-        text-decoration: underline;
+        text-decoration: none;
         text-decoration-color: white;
         line-height: 70px;
-        font-size: 32px;
+        font-size: 22px;
         font-family: arial;
+        width: 100%;
+        text-align: center;
       }
     }
 
@@ -295,8 +317,10 @@
             <img src="images/x.png" width="35px" onclick="hamburger();" >
           </div>
           <ul class="sidebar-list">
-            <li class="js-resume"></li>
+            <li class="js-home"></li>
+            <hr class="temp-hr js-menu-sep">
             <li class="js-gallery"></li>
+            <hr class="temp-hr-1 js-menu-sep-1">
             <li class="js-contact"></li>
           </ul>
         </div>
