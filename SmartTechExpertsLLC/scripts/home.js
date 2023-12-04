@@ -1,15 +1,15 @@
 document.getElementById('garage').addEventListener('click',function(){
   window.location.href='gallery.html#garages-section';
 });
-document.getElementById('garage-re').addEventListener('click',function(){
-  window.location.href='gallery.html#garages-section';
+document.getElementById('painting').addEventListener('click',function(){
+  window.location.href='gallery.html';
 });
 
-document.getElementById('bathroom').addEventListener('click',function(){
-  window.location.href='gallery.html';
+document.getElementById('electrical').addEventListener('click',function(){
+  window.location.href='gallery.html#electrical';
 });
-document.getElementById('bathroom-re').addEventListener('click',function(){
-  window.location.href='gallery.html';
+document.getElementById('plumbing').addEventListener('click',function(){
+  window.location.href='gallery.html#plumbing-section';
 });
 
 function hamburger(){
