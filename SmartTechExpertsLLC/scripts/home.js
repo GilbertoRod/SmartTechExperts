@@ -1,5 +1,5 @@
-document.getElementById('garage').addEventListener('click',function(){
-  window.location.href='gallery.html#garages-section';
+document.getElementById('flooring').addEventListener('click',function(){
+  window.location.href='gallery.html#flooring-section';
 });
 document.getElementById('painting').addEventListener('click',function(){
   window.location.href='gallery.html';
