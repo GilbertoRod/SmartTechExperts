@@ -11,6 +11,12 @@ document.getElementById('electrical').addEventListener('click',function(){
 document.getElementById('plumbing').addEventListener('click',function(){
   window.location.href='gallery.html#plumbing-section';
 });
+document.getElementById('bathroom').addEventListener('click',function(){
+  window.location.href='gallery.html#bathroom-section';
+});
+document.getElementById('additional').addEventListener('click',function(){
+  window.location.href='gallery.html#additional-section';
+});
 
 function hamburger(){
   const sidebar=document.querySelector(".js-sidebar");

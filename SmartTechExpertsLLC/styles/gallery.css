@@ -92,8 +92,8 @@
       }
   
       .project-title {
-        font-size: 46px;
-        font-family: 'Chivo'
+        font-size: 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
       }
   
   
@@ -121,15 +121,15 @@
         column-gap: 40px;
         row-gap: 60px;
         margin-bottom: 120px;
-        font-family: Chivo;
         align-items: flex-end;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       }
   
   
   
       .gallery-grid img {
         width: 100%;
-        height: 311px;
+        height: 480px;
         object-fit: cover;
         object-position: center;
         box-shadow: 1px 1px 3px black;

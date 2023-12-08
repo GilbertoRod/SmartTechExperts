@@ -5,7 +5,7 @@
       }
       body{
         margin: 0px;
-        font-family: interBold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         padding-top: 60px;
         background-color: rgb(245, 245, 245);
       }
@@ -238,7 +238,7 @@
   
         .ham-anchor {
           text-decoration:none;
-          font-family: interBold;
+          font-family: "interBold";
           color: rgb(13,92,164);
         }
         .ham-anchor:hover {
