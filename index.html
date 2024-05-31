@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Tech Experts | Home Renovations</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo&family=Lobster&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <link rel="stylesheet" href="styles/index.css?v=2">
+</head>
+<body>
+  <div class="navigation">
+    <div class="nav-flex">
+      <a href="index.html"><div>
+        <img src="images/logo.png" height="70px" class="logo-image">
+      </div></a>
+      <div class="hamburger">
+        <div class="ham-icon js-ham">
+        <img src="images/hamburger.png" onclick="hamburger();" width="40px">
+        </div>
+        
+
+        <div class="js-sidebar">
+          <div class="x-icon">
+            <img src="images/x.png" width="35px" onclick="hamburger();" >
+          </div>
+          <ul class="sidebar-list">
+            <li class="js-home"></li>
+            <hr class="temp-hr js-menu-sep" >
+            <li class="js-gallery"></li>
+            <hr class="temp-hr-1 js-menu-sep-1">
+            <li class="js-contact"></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <header class="nav-content">
+        <ul class="nav-list">
+
+        
+          <a href="index.html" class="nav-link"><div class="button-div">
+            <li class="home-button">Home</li>
+          </div></a>
+
+          <a href="gallery.html" class="nav-link"><div class="button-div"> 
+              <li class="gallery-button">Gallery</li>
+            </div></a>
+      
+          <a href="contact.html" class="nav-link"><div class="button-div">
+            <li class="contact-button">Contact</li>
+          </div></a>
+        </ul>
+        
+      </header>
+    </div>
+    <hr class="nav-hr">
+  </div>
+  
+  <div class="top-wrapper">
+
+    <img src="images/image1.jpg" class="intro-image">
+
+    <h1 class="image-info">DFW AREA</h1>
+    <a href="gallery.html"><button class="btn">Our Work</button></a>
+  </div>
+
+  <div class="middle-wrapper">
+    <h1 class="body-title">ABOUT US</h1>
+    <hr>
+    <p class="body-description">Smart Tech Experts LLC is your go-to partner for home and apartment renovations and repairs in the Dallas area. We take pride in our commitment to quality craftsmanship and paying attention to the little details that make a big difference in transforming living spaces. Our experienced team is dedicated to bringing your vision to life, ensuring that every renovation project is a seamless and enjoyable experience.
+      <br><br>
+    Whether you're looking to revamp your entire home or just need a few repairs, we've got you covered. Our focus on exceptional results has made us the trusted choice for the Dallas community. We understand the importance of creating a space that reflects your style and meets your practical needs. With Smart Tech Experts LLC, you can trust that your renovation needs will be met with professionalism and a commitment to delivering the best possible outcome for your home.</p>
+  </div>
+
+  <div class="bottom-wrapper">
+    <h1 class="body-title">SERVICES</h1>
+    <hr>
+    <center>
+      <div class="special-grid">
+        <div  class="grid-item"><img src="images/services/painting.jpg" width="100%" id="painting" class="js-garage"></div>
+        
+        <div  class="grid-item"><img src="images/services/electrical.jpg" width="100%" id="electrical" class="js-bathroom"></div>
+        
+        <div  class="grid-item"><img src="images/services/plumbing.jpg" width="100%" id="plumbing" class="js-plumbing"></div>
+
+        <div class="grid-item"><img src="images/services/flooring.jpg" id="flooring" width="100%" class="js-garage"></div>
+        
+        <div class="grid-item"><img src="images/services/bathroom.jpg" id="bathroom" width="100%" class="js-bathroom"></div>
+        
+        <div class="grid-item"><img src="images/services/additional.jpg" id="additional" width="100%" class="js-bathroom"></div>
+
+      </div>
+    </center>
+  </div>
+
+  <footer>
+    <br><br>
+    <center>
+      SMART TECH EXPERTS LLC. <br>&copy; 2023 All Rights Reserved.
+    </center>
+    <br><br>
+  </footer>
+  <script src="scripts/home.js">
+  </script>
+</body>
+</html>
